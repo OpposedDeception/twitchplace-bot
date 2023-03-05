@@ -47,7 +47,7 @@ def place_pixel(x=None, y=None, color=None):
     data = bytearray([x, y]) + pixel_bytes
     while True:
         time.sleep(15)
-        response = requests.post(url,     headers=headers, data=data)
+        response = requests.post(url, headers=headers, data=data)
         if response.status_code == 201:
             print("[****] - Пиксель поставился!")
         else:
@@ -79,7 +79,6 @@ def main():
         "scope": "chat:edit"
         }
          auth_response = requests.post(auth_url, params=auth_params)
-         auth_response = requests.post(auth_url,                  params=auth_params)
          auth_data = auth_response.json()
          access_token = auth_data["access_token"]
          api = "https://api.twitch.tv/helix/chat"
@@ -92,7 +91,7 @@ def main():
         "Client-ID": client_id,
         "Content-Type": "application/json"
         }
-         message_response = requests.                                  post(api,                                                        headers=message_headers, data=json.                    dumps(message_params))
+         message_response = requests.post(api, headers=message_headers, data=json.dumps(message_params))
          if message_response.ok:
             print(Fore.GREEN + "Сообщение !join было отправлено, вы можете приступать к читерству.")
             for i in range(3):
