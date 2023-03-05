@@ -4,19 +4,9 @@ A bot that places pixels on twitch.tv/place. It can place on other pixel-battle-
 
 ## Installation 
 You need to install shitton of libraries for such small bot.
-Assuming you have installed nothing, paste these commands one by one after each package was installed
+Assuming you have installed nothing, paste this command to install everything you need.
 ```
-pip install socket
-pip install requests
-pip install pillow
-pip install opencv-python
-pip install json
-pip install time
-pip install beautifulsoup4
-pip install pyfiglet
-pip install colorama
-pip install json
-pip install numpy
+python3 setup.py install
 ```
 In case something didn't install, contact me through Discord: Europer#5312 or
 alternativey use StackOverflow if I'm not responding.
