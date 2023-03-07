@@ -1,13 +1,12 @@
-import sys 
 import time 
 import requests
 import pyfiglet
 import time
 import json
-from PIL import Image
 import cv2
 import socket
 import numpy as np 
+from PIL import Image
 from bs4 import BeautifulSoup 
 from colorama import Fore, Back, Style, init 
 
