@@ -35,7 +35,7 @@ def place_pixel(x=None, y=None, color=None):
 def main():
          bot_title = pyfiglet.figlet_format("Twich Place Bot", font="digital")
          print(bot_title)
-         version = pyfiglet.figlet_format(Fore.YELLOW + "V.0.1")
+         version = pyfiglet.figlet_format(Fore.YELLOW + "V.0.2")
          print(version)
          print(Fore.YELLOW + """Чтобы продолжить, введите ниже соответствешую информацию для продолжения:
              Twitch API - Чтобы бот мог подключиться к Твичу
