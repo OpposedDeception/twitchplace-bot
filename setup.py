@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='twitchplace-bot',
-    version='0.1',
+    version='0.2',
     description='A bot for TwitchPlace',
     author='OpposedDeception',
     author_email='noemail',
@@ -11,8 +11,7 @@ setup(
     install_requires=[
         'requests',
         'pyfiglet',
-        'Pillow',
-        'opencv-python-headless',
+        'pillow'
         'numpy',
         'beautifulsoup4',
         'colorama'
