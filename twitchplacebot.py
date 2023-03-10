@@ -62,11 +62,9 @@ def main():
            if "access_token" in auth_data:
                 access_token = auth_data["access_token"]
            else:
-                print(Fore.RED + "Ошибка получения access_token.")
-                return
+                print(Fore.RED + "Ошибка получения access_token.")        
          else:
-                raise WrongTokenError(Fore.RED + 'Ошибка получения access_token. Проверьте, правильно ли введён токен.')                
-                return
+                raise WrongTokenError(Fore.RED + 'Ошибка получения access_token. Проверьте, правильно ли введён токен.')                            
 
          auth_data = auth_response.json()
          access_token = auth_data["access_token"]
