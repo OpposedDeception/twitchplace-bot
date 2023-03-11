@@ -9,7 +9,7 @@ Assuming you have installed nothing, paste this command to install everything yo
 python3 setup.py install
 ```
 In case something didn't install, contact me through Discord: Europer#5312 or
-alternativey use StackOverflow if I'm not responding.
+send an email to anonovezgame@tutanota.com or alternatively use StackOverflow if I'm not responding to both.
 
 ## Setting up
 After you installed 100500 packages we need to get necessary information
