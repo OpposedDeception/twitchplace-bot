@@ -79,7 +79,7 @@ def main():
         "Client-ID": client_id,
         "Content-Type": "application/json"
         }
-         message_response = requests.                                  post(api,                                                        headers=message_headers, data=json.                    dumps(message_params))
+         message_response = requests.post(api, headers=message_headers, data=json.dumps(message_params))
          if message_response.ok:
             print(Fore.GREEN + "Сообщение !join было отправлено, вы можете приступать к читерству.")
             for i in range(3):
