@@ -3,7 +3,8 @@ import requests
 import pyfiglet
 import time
 import json
-import numpy as np 
+import numpy as np
+from bs4 import BeautifulSoup
 from colorama import Fore, Back, Style, init 
 
 init(convert=True)
