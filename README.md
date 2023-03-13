@@ -17,6 +17,6 @@ you need to get the so-called Client ID, Client Secret and the TwitchAPI itself.
 You have to go to https://dev.twitch.tv/console and get every piece of data from there.
 
 ## How to place pixels
-<img src="https://i.imgur.com/sozno1l.jpg" height="240" width="420"/>
+<img src="https://i.imgur.com/xVZ16Nj.jpg" height="100" width="620"/>
 After this ^^ popped up and you entered Twitch data, then you are free to go to give it X, Y coordinates
 and color name in HEX values. Now you are ready to smash this pixel battle!
