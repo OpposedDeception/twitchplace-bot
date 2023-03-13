@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='twitchplace-bot',
-    version='0.2',
+    version='0.3,,
     description='A bot for TwitchPlace',
     author='OpposedDeception',
     author_email='noemail',
@@ -14,7 +14,8 @@ setup(
         'pillow'
         'numpy',
         'beautifulsoup4',
-        'colorama'
+        'colorama',
+        'webbrowser'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
