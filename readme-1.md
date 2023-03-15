@@ -1,14 +1,24 @@
+# Credits
+I want to greatly appreciate the dude who helped me with this method and who wrote the original markup.
+He spent his free time to parse the APIs and finish the method.
+Please, follow his socials below, this bro saved me a week:
+GitHub - https:/github.com/11KOT11
+Twitch - https://twitch.tv/sauval_
+YouTube - https://youtube.com/@nofis7941
+
+God bless that guy!
+
 # TwitchPlaceAPI
 
->An API has 3 knows urls:
+>An API has known urls:
 >> https://place.streamkit.com
 >> https://place-dev.streamkit.com
 >> https://place.streamkit.com
 
 
-After caling any of the links above, you will get an response: *STATUS OF THE APP (getAppState)*
+After calling any of the links above, you will get an response: *STATUS OF THE APP (getAppState)*
 
-###Logging in
+### Logging in
 **Authorization to the application occurs due to the session-token built into it, which is valid for + -1 hour (it is not known for sure)
 for authorization, you need to send data to the headers afterward**
 
