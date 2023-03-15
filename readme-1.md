@@ -1,12 +1,14 @@
 # Credits
 I want to greatly appreciate the dude who helped me with this method and who wrote the original markup.
+
 He spent his free time to parse the APIs and finish the method.
+
 Please, follow his socials below, this bro saved me a week:
 GitHub - https:/github.com/11KOT11
 Twitch - https://twitch.tv/sauval_
 YouTube - https://youtube.com/@nofis7941
 
-God bless that guy!
+God bless that guy!!!!
 
 # TwitchPlaceAPI
 
