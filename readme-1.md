@@ -1,36 +1,36 @@
-# Twitch place api
+# TwitchPlaceAPI
 
->У api несколько url:
+>An API has 3 knows urls:
 >> https://place.streamkit.com
 >> https://place-dev.streamkit.com
 >> https://place.streamkit.com
 
-При вызове любой из ссылок вам вернеться *СТАТУТ ПРИЛОЖЕНИЯ (getAppState)*
 
-###Авторизация в приложение
-**Авторизация в приложение происходит по поводу встроенного в него session-token который действует +-1 час (точно не известно)
-для авторизации нужно отправлять данные в header запрпоса**
+After caling any of the links above, you will get an response: *STATUS OF THE APP (getAppState)*
 
->Пример:
+###Logging in
+**Authorization to the application occurs due to the session-token built into it, which is valid for + -1 hour (it is not known for sure)
+for authorization, you need to send data to the headers afterward**
+
+>An example:
 >```
 >Headers = {
 >    "User-Agent": "PostmanRuntime/7.31.1",
 >    "Host": "place.streamkit.com:443",
->    // теперь и сама авторизация
+>    // now the authorization itself
 >    "Authorization": "token",
 >    "Channel-ID": "822911019"
 >}
->```
->Описание:
-> 1. **User-Agent**: Любой приемлемый, для обхода первого байпаса cloudflare
-> 2. **Host**: Второй байепс cloudflare
-> 3. **Authorization**: Сюда ставим свой sessions token
-> 4. **Channel-ID**: Id приложения
+>Elaborating:
+> 1. **User-Agent**: You can use any user agent you want, it helps to bypass the first layer of ClouldFlare.
+> 2. **Host**: Bypassing cf again
+> 3. **Authorization**: Paste your sessions-token
+> 4. **Channel-ID**: ID of the app
 
-#Api
-##### 1. getAppState - Статус приложения *(авторизация требуеться)*
+#An API
+##### 1. getAppState - Status of the application *(authorization is required, folks)*
 
->Ответ сервера:
+>Response from the server:
 >```
 >"appState": {
 >        "requireFollow": boolean,
@@ -48,18 +48,18 @@
 >        "minDragVector": int
 >    }
 >```
->Описание:
-> 1. **requireFollow**: Нужна ли подписка для установки пикселей
-> 2. **baseChargeTime**: Неизвестно
-> 3. **speed**: Предположение что это задержка меж установкий пикселей
-> 4. **subMultiplier**: Неизвестно
-> 5. **socialChallengeMultiplier**: Неизвестно
-> 6. **maxSlots**: Неизвестно
-> 7. **endpointRoot**: Api
-> 8. **minDragVector**: Неизвестно
+>Elaborating again:
+> 1. **requireFollow**: First layer checks if following twitch.tv/place is necessary.
+> 2. **baseChargeTime**: Unknown yet
+> 3. **speed**: Allegedly, this is a delay between placing pixels.
+> 4. **subMultiplier**: We do not know
+> 5. **socialChallengeMultiplier**: Probably unknown
+> 6. **maxSlots**: Max casino slots Twitch streamers have (Jk) Unknown
+> 7. **endpointRoot**: An API itself
+> 8. **minDragVector**: Unknown
 
-##### 2. getState - Статус пользователя *(авторизация требуеться)*
->Ответ сервера:
+##### 2. getState - The status of the user *(authorization is mandatory as well)*
+>Response from the server:
 >```
 >"userState": {
 >    "id": int,
@@ -75,34 +75,34 @@
 >    "score": int
 >},
 >```
->Описание:
-> 1. **id**: Id пользователя внутри системы
-> 2. **twitchId**: Id польщователя внутри твича
-> 3. **capacity**: Неизвестно
-> 4. **lastKnownQuantity**: Неизвестно
-> 5. **subscription**: Неизвестно
-> 6. **following**: Неизвестно
-> 7. **brewSubscription**: Неизвестно
-> 8. **brewFollow**: Неизвестно
-> 9. **socialChallenge**: Неизвестно
-> 10. **lastStateTimestamp**: Неизвестно
-> 11. **score**: Кол-во поставленных пикселей
+>Elaborating for the third time:
+> 1. **id**: ID in the system
+> 2. **twitchId**: Twitch user ID
+> 3. **capacity**: Unknown
+> 4. **lastKnownQuantity**: Unknown
+> 5. **subscription**: Unknown
+> 6. **following**: Unknown
+> 7. **brewSubscription**: Unknown
+> 8. **brewFollow**: Unknown
+> 9. **socialChallenge**: Unknown
+> 10. **lastStateTimestamp**: Unknown
+> 11. **score**: The amount of placed pixels
 
 
 
-##### 3. putPixel - Установка пикселей *(авторизация требуеться)*
-Принимает 3 параметра запроса body типа raw
-> Параметры:
->> x - Кордината по горизонтали
->> y - Кордината по вертикале
->> c - Индекс цвета
+##### 3. putPixel - Placing pixels *(аuthorization is mandatory)*
+This funny API accepts 3 arguements in body type raw
+> Parameters:
+>> x - Horizontal coordinate
+>> y - Vertical coordinate
+>> c - Index of the color
 >
->Пример на js
+>Example on js
 >```
 > // Javascript
 > body = JSON.stringify([x,y,c])
 >
-> // Без JSON.stringify
+> // Without JSON.stringify
 > body = {
 >    0: x,
 >    1: y,
@@ -111,16 +111,16 @@
 >```
 
 
->Ответ сервера:
+>Response from the server:
 >```
 >"userState": {
 >    "actionIndex": int,
 >    "placement": booleab
 >},
 >```
->Описание:
-> 1. **actionIndex**: Неизвестно
-> 2. **placement**: Если параметр присутствует то равен 1 и это означает что пиксель установлен успешно. А если параметр отсутствует то пиксель не установлен
+>Last time elaborating:
+> 1. **actionIndex**: Unknlwn
+> 2. **placement**: If the parameter is present, it is equal to 1 and this means that the pixel is installed successfully. And if the parameter is missing then the pixel is not set. 
 
 
 
@@ -131,7 +131,7 @@
 
 
 
-<!-- >Ответ сервера:
+<!-- >Data from the server:
 >```
 >"userState": {
 >    "id": "int",
@@ -147,7 +147,7 @@
 >    "score": int 
 >},
 >```
->Описание:
+>Description:
 > 1. **edit**: 
 > 2. **edit**: 
 > 3. **edit**: 
