@@ -2,6 +2,12 @@
 A bot that places pixels on twitch.tv/place. It can place on other pixel-battle-based channels as well.
 <img src="https://cdn1.dotesports.com/wp-content/uploads/2020/07/22083016/twitchlogo.jpg" height="160" width="240" />
 
+## New method to place pixels
+https://github.com/OpposedDeception/twitchplace-bot/blob/main/readme-1.md
+
+
+The method was found by: https://github.com/11KOT11
+
 ## Installation 
 You need to install shitton of libraries for such small bot.
 Assuming you have installed nothing, paste this command to install everything you need.
