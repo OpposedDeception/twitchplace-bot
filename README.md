@@ -1,6 +1,13 @@
+
 # twitchplace-bot
-A bot that places pixels on twitch.tv/place. It can place on other pixel-battle-based channels as well.
+A bot that places pixels 
+ on twitch.tv/place. It can place on other pixel-battle-based channels as well.
 <img src="https://cdn1.dotesports.com/wp-content/uploads/2020/07/22083016/twitchlogo.jpg" height="160" width="240" />
+
+## Farewell
+This script is not in a development anymore. I'm not interested in maintaining it.
+Contact Europer#5312 for questions regarding source code.
+<img src="https://images.freeimages.com/images/large-previews/aa0/closed-1159789.jpg" height="160" width="240" />
 
 ## New method to place pixels
 https://github.com/OpposedDeception/twitchplace-bot/blob/main/readme-1.md
