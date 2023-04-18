@@ -5,8 +5,9 @@ A bot that places pixels
 <img src="https://cdn1.dotesports.com/wp-content/uploads/2020/07/22083016/twitchlogo.jpg" height="160" width="240" />
 
 ## Farewell
-This script is not in a development anymore. I'm not interested in maintaining it.
+This version of script is not in a development anymore. I'm not interested in maintaining it.
 Contact Europer#5312 for questions regarding source code.
+New version can be found here: https://github.com/OpposedDeception/TwitchPixelBotREWRITE
 <img src="https://images.freeimages.com/images/large-previews/aa0/closed-1159789.jpg" height="160" width="240" />
 
 ## New method to place pixels
